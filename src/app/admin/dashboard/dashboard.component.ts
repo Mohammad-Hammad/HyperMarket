@@ -13,10 +13,28 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
   goTocategory(){
-this.route.navigate(['admin/managecategory']);
+this.route.navigate(['admin/manage']);
   }
   clear(){
     localStorage.clear();
     this.route.navigate(['auth/login']);
+  }
+  goToproduct()
+  {
+    this.route.navigate(['admin/manageproduct']);
+  }
+  goToUserRegis()
+  {
+    this.route.navigate(['admin/UserRegis'])
+  }
+  goToViewUserRegis(){
+    this.route.navigate(['admin/ViewUserRegis'])
+  }
+  goToMonthly()
+  {
+    this.route.navigate(['admin/MonthlyRep'])
+  }
+  goToAnuual(){
+    this.route.navigate(['admin/AnuualRep'])
   }
 }
