@@ -5,6 +5,7 @@ import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module';
 import { AutherizationGuardGuard } from './autherization-guard.guard';
 import { ContactComponent } from './contact/contact.component';
+import { GuestModule } from './guest/guest.module';
 import { HomeComponent } from './home/home.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 
@@ -31,7 +32,13 @@ component:ContactComponent
         path:'admin',
         loadChildren:()=>AdminModule,
         canActivate:[AutherizationGuardGuard]
-        }];
+        },{
+          path:'guest',
+           loadChildren:()=>GuestModule
+          // canActivate:[AutherizationGuardGuard]
+          }
+      
+      ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

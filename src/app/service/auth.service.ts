@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
+  currentCustomer:any;
+  currentCustomerObj:any;
 selectedProduct:any={};
 data:any=[]
 display_Image:any;
@@ -39,6 +41,7 @@ submit(username:any,password:any){
   let data:any = jwt_decode(responce.token);
   console.log(data);
   localStorage.setItem('user',JSON.stringify({...data}));
+
      if(data.role=='2')
      {
        this.route.navigate(['home']);
