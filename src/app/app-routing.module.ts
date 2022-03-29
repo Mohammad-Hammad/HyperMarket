@@ -5,9 +5,9 @@ import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module';
 import { AutherizationGuardGuard } from './autherization-guard.guard';
 import { ContactComponent } from './contact/contact.component';
-import { GuestModule } from './guest/guest.module';
 import { HomeComponent } from './home/home.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { UserModule } from './user/user.module';
 
 const routes: Routes = [{
   path:'home',
@@ -32,9 +32,10 @@ component:ContactComponent
         path:'admin',
         loadChildren:()=>AdminModule,
         canActivate:[AutherizationGuardGuard]
-        },{
-          path:'guest',
-           loadChildren:()=>GuestModule
+        }
+        ,{
+          path:'user',
+          loadChildren:()=>UserModule,
           // canActivate:[AutherizationGuardGuard]
           }
       

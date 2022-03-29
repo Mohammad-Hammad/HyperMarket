@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { GuestRoutingModule } from './guest-routing.module';
-import { UserComponent } from './user/user.component';
+import { UserRoutingModule } from './user-routing.module';
 import { ContentComponent } from './content/content.component';
 import { SearchBarCodeComponent } from './search-bar-code/search-bar-code.component';
-import { UpdateProfileComponent } from './update-profile/update-profile.component';
+import { ViewUpdateProfileComponent } from './view-update-profile/view-update-profile.component';
 import { SharedModule } from '../shared/shared.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
-    UserComponent,
     ContentComponent,
     SearchBarCodeComponent,
-    UpdateProfileComponent
+    ViewUpdateProfileComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
-    GuestRoutingModule,
+    UserRoutingModule,
     SharedModule
   ]
 })
-export class GuestModule { }
+export class UserModule { }
