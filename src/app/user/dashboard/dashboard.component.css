@@ -476,3 +476,13 @@ html {
       width: calc(100% - 55px);
     }
   }
+
+
+  @media (min-width: 992px)
+  {
+#mainNav .navbar-collapse .navbar-sidenav {
+    
+    margin-top: 52px !important;
+    height: 557px !important;
+}
+}

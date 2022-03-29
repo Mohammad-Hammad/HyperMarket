@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/service/user.service';
@@ -10,10 +10,9 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class SearchBarCodeComponent implements OnInit {
   @ViewChild('openCard') openCard! :TemplateRef<any>
-   barcode:any='Enter BarCode';
-   @Output() Batool = new EventEmitter()
-
-  constructor(private router:Router,public user:UserService,private dialog:MatDialog) { }
+  barcode:any='Enter BarCode';
+  constructor(private router:Router,public user:UserService,
+    private dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -41,4 +40,5 @@ export class SearchBarCodeComponent implements OnInit {
     console.log("data logged : "+user);
 
   }
+
 }

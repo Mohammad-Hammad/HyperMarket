@@ -1,7 +1,5 @@
-
-
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+ <!-- Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="index.html">Hyper-Market</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,50 +7,54 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="">
-            <i class="fa fa-fw fa-dashboard"></i>
-            <span  class="nav-link-text">Dashboard</span>
+          <a class="nav-link" href="user/content">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span class="nav-link-text"> Dashboard</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="charts.html">
-            <i class="fa fa-fw fa-area-chart"></i>
-            <span class="nav-link-text">Charts</span>
+          <a class="nav-link">
+            <i class="fa fa-search"></i>
+            <span class="nav-link-text" (click)="goToSearchBarCode()"> Search BarCode</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" >
-            <i class="fa fa-search"></i>
-            <span class="nav-link-text"(click)="goToSearchBarCode()">Search Bar Code</span>
+          <a routerLink="user/viewToUpdate" class="nav-link" >
+            <i class="fa fa-user-circle"></i>
+            <span class="nav-link-text" (click)="goToViewProfile()"> View Profile</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a  class="nav-link" >
-            <i class="fa fa-search"></i>
-            <span class="nav-link-text" (click)="goToUpdateProfile()">Update Profile</span>
+        <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link">
+            <i class="fa fa-linode" aria-hidden="true"></i>
+
+            <span class="nav-link-text" > Manage Products</span>
+          </a>
+        </li>
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link">
+            <i class=" 	fa fa-street-view"></i>
+            <span class="nav-link-text"> View Registered Users</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-          <a href="" class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
-           data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">settings</span>
+          <a class="nav-link">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="nav-link-text"> View Monthly Reports</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="nav-link-text"> View Anuual Reports</span>
+          </a>
+        </li> -->
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
             <a class="nav-link" >
-              <i class="fa fa-fw fa-table"></i>
-              <span class="nav-link-text"(click)="clear()">LogOut</span>
+              <i class="fa fa-terminal"></i>
+              <span class="nav-link-text"(click)="clear()"> LogOut</span>
             </a>
           </li>
-     
-      
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
-          </a>
-        </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">

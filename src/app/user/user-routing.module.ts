@@ -1,33 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentComponent } from './content/content.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchBarCodeComponent } from './search-bar-code/search-bar-code.component';
-import { UpdateProfileComponent } from './update-profile/update-profile.component';
-import { UserComponent } from './user/user.component';
+import { ViewUpdateProfileComponent } from './view-update-profile/view-update-profile.component';
 
 const routes: Routes = [
-  
   {
     path:'',
     component:ContentComponent
-  },
-   {
+  }, 
+  {
     path:'content',
     component:ContentComponent
 
   },
   {
-    path:'user',
-    component:UserComponent
+    path:'dashboard',
+    component:DashboardComponent
+
   },
   {
-    path:'barcode',
+    path:'search',
     component:SearchBarCodeComponent
+
   },
-    
   {
-    path:'viewUpdate',
-    component:UpdateProfileComponent
+    path:'viewToUpdate',
+    component:ViewUpdateProfileComponent
+
   }
 ];
 
@@ -35,4 +36,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class GuestRoutingModule { }
+export class UserRoutingModule { }
