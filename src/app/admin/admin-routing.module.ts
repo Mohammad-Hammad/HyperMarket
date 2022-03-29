@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AnuualReportComponent } from './anuual-report/anuual-report.component';
 import { ContentComponent } from './content/content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ManageAdminsComponent } from './manage-admins/manage-admins.component';
 import { ManageCategoriesComponent } from './manage-categories/manage-categories.component';
 import { ManageProductsComponent } from './manage-products/manage-products.component';
 import { MonthlyReportComponent } from './monthly-report/monthly-report.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisteredDetailsComponent } from './registered-details/registered-details.component';
+import { SearchComponent } from './search/search.component';
 import { UserRegisComponent } from './user-regis/user-regis.component';
 
 const routes: Routes = [
@@ -49,7 +51,15 @@ const routes: Routes = [
   {
     path:'MonthlyRep',
     component:MonthlyReportComponent
-  }
+  },
+  {
+    path:'search',
+    component:SearchComponent
+  },
+  {
+    path:'manageAdmin',
+    component:ManageAdminsComponent
+  },
 ];
 
 @NgModule({

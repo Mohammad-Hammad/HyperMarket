@@ -37,4 +37,7 @@ this.route.navigate(['admin/manage']);
   goToAnuual(){
     this.route.navigate(['admin/AnuualRep'])
   }
+  goToProfile(){
+    this.route.navigate(['admin/Profile'])
+  }
 }

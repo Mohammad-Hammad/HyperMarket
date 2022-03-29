@@ -33,7 +33,7 @@ export class UpdateProfileComponent implements OnInit {
   ngOnInit(): void {
     console.log(typeof(this.customerid));
     
-    this.user.getCustomerById( this.customerid)
+    this.user.getCustomerById(this.customerid)
   }
 
   uploadFile(file:any){

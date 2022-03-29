@@ -14,6 +14,9 @@ import { UserRegisComponent } from './user-regis/user-regis.component';
 import { AnuualReportComponent } from './anuual-report/anuual-report.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MonthlyReportComponent } from './monthly-report/monthly-report.component';
+import { SearchComponent } from './search/search.component';
+import { ManageAdminsComponent } from './manage-admins/manage-admins.component';
+import { CreateAdminsComponent } from './create-admins/create-admins.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { MonthlyReportComponent } from './monthly-report/monthly-report.componen
     UserRegisComponent,
     AnuualReportComponent,
     ProfileComponent,
-    MonthlyReportComponent
+    MonthlyReportComponent,
+    SearchComponent,
+    ManageAdminsComponent,
+    CreateAdminsComponent
   ],
   imports: [
     CommonModule,
