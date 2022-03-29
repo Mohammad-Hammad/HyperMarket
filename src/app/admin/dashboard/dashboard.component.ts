@@ -41,3 +41,4 @@ this.route.navigate(['admin/manage']);
     this.route.navigate(['admin/Profile'])
   }
 }
+//
