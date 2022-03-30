@@ -25,7 +25,11 @@ export class AutherizationGuardGuard implements CanActivate {
       this.toaster.success('Welcome in admin page')
       return true;
     }
+<<<<<<< HEAD
     else {
+=======
+   } else {
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
     this.toaster.warning('This page for admin ..');
     return false;
     }
@@ -34,6 +38,7 @@ export class AutherizationGuardGuard implements CanActivate {
     this.toaster.warning('You are not in database..');
     return false;
   }
+<<<<<<< HEAD
 }else if(state.url.indexOf('user')>=0){
   let user :any = localStorage.getItem('user');
   if(user){
@@ -56,6 +61,8 @@ else{
  }
 
 }
+=======
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
      return true;
    }
    else{

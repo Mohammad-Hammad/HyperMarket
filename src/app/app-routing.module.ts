@@ -6,7 +6,10 @@ import { AuthModule } from './auth/auth.module';
 import { AutherizationGuardGuard } from './autherization-guard.guard';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+<<<<<<< HEAD
 import { ProductComponent } from './product/product.component';
+=======
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { UserModule } from './user/user.module';
 
@@ -37,12 +40,17 @@ component:ContactComponent
         ,{
           path:'user',
           loadChildren:()=>UserModule,
+<<<<<<< HEAD
           canActivate:[AutherizationGuardGuard]
           } ,{
             path:'product',
             component:ProductComponent,
             
             }
+=======
+          // canActivate:[AutherizationGuardGuard]
+          }
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
       
       ];
 

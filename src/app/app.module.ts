@@ -14,7 +14,10 @@ import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toas
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { TokenInterceptor } from './Interceptor/token.interceptor';
+<<<<<<< HEAD
 import { ProductComponent } from './product/product.component';
+=======
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ProductComponent } from './product/product.component';
     ContactComponent,
     AboutComponent,
     TestimonialComponent,
+<<<<<<< HEAD
     ProductComponent,
+=======
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
     
   ],
   imports: [

@@ -70,6 +70,7 @@ export class HomeService {
       this.toastr.error('cant delete')
     })
   }
+<<<<<<< HEAD
   product:any=[];
   getCategoryAndProduct()
   {
@@ -117,5 +118,7 @@ this.toastr.success('Data Retrieved !!')
   })
   
     }
+=======
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
 
 }

@@ -21,10 +21,16 @@ export class UserService {
    uploadAttachment(file:FormData)
    {
   
+<<<<<<< HEAD
      this.http.post('https://localhost:44338/api/user/UploadImg/',file)
      .subscribe((res:any)=>{
        if(res)
        console.log(res);
+=======
+     this.http.post('https://localhost:44338/api/user/UploadImgCustomer/',file)
+     .subscribe((res:any)=>{
+       if(res)
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
        this.display_Image=res.imageName;
      },err=>{
        this.toaster.error(err.message , err.status);
@@ -53,7 +59,11 @@ export class UserService {
 
   updateCustomer(custId:any){
     custId.imageName=this.display_Image;
+<<<<<<< HEAD
     console.log('custId '+custId);
+=======
+    console.log('custId '+custId.imageName);
+>>>>>>> 4e39e57678ae90860ab046999d89d7c04cdb2f35
     
     this.http.put('https://localhost:44338/api/User/updateCustomer',custId).subscribe((res)=>{
       console.log('inside update : '+JSON.stringify(res) );
