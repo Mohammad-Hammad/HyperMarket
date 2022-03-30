@@ -4,7 +4,7 @@
       <div class="container-fluid">
 
 
-        <form [formGroup]="SearchForm">
+        <form [formGroup]="SearchForm" method="post">
             <input formControlName="dateFrom" type="date" name="start"/>
             <input formControlName="dateTo" type="date" name="end" />
             <input type="submit" name="submit" value="Search" (click)="getSearch()"/>

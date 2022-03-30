@@ -11,13 +11,12 @@ data:any=[]
   constructor(private spinner:NgxSpinnerService,private http:HttpClient,private toastr:ToastrService) { }
 
 
-  sreach(datefrom:any,dateto:any){
-    
-    this.http.get('https://localhost:44338/api/Admin/SerachDates/',datefrom,)
+  search(body:any){
+    debugger;
+    this.http.post('https://localhost:44338/api/Admin/SearchDates/',body)
     .subscribe((res:any)=>{
-      console.log(res);
-      this.data=[res];
-      console.log("data inside search "+this.data);
+      debugger;
+      this.data=res;
       this.toastr.success('Search Successfully :) ')
     },err=>{
       this.toastr.error('something error in Search');
